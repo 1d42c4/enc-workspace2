@@ -1,0 +1,25 @@
+{
+  "date": "2026-09-20",
+  "windows_rust_tests_passed": 2018,
+  "numbered_apps": 100,
+  "per_app_cli_and_adversarial_tests": 19,
+  "primitive_known_answer_tests": 63,
+  "native_aead_authentication_tests": 44,
+  "ascon_known_answer_tests": 3,
+  "core_and_private_file_tests": 8,
+  "individual_package_compile_checks": 100,
+  "clippy": "passed, all targets, warnings denied",
+  "formatting": "passed, workspace and shared include files",
+  "documentation": "passed with warnings denied",
+  "linux": "all-target compile check passed; runtime not executed locally",
+  "release_executables": 101,
+  "release_smoke_apps": 100,
+  "independent_reference_apps": 43,
+  "independent_reference_directional_checks": 602,
+  "rustsec_matching_unpatched_advisories": 0,
+  "limits": {
+    "plaintext_bytes": 67108864,
+    "key_file_bytes": 1048576
+  },
+  "caveat": "Automated verification, not an external security audit. RC4 and toy apps are not suitable for secrets."
+}

@@ -1,0 +1,20 @@
+[package]
+name = "a69"
+description = "Serpent-256-CBC file encryption with executable-local key.key"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish = false
+
+[dependencies]
+keyfile-core.workspace = true
+zeroize.workspace = true
+cbc.workspace = true
+cipher.workspace = true
+serpent.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+
+[lints]
+workspace = true

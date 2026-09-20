@@ -1,0 +1,17 @@
+# Security scope and limitations
+
+Use random key material. Never publish `key.key`, never replace the only copy of a key needed for existing ciphertext, and never distribute keys together with ciphertext. The generator refuses to overwrite keys. Apps do not erase originals or recover lost keys.
+
+The production primitives are supplied by RustCrypto crates. Wrapper logic uses SHA256 and HKDF to derive per-file, per-app cipher keys/IVs and an independent HMAC key. All files authenticate the header and complete ciphertext before decrypting or publishing output. Native AEAD modes retain their full native tags too. Encryption is randomized using the OS RNG; RNG failure returns an error.
+
+This is a new custom file format. Testing and published vectors establish specific behavior; they are not an independent security audit. Algorithm names and large key sizes alone do not guarantee security. Prefer the full-round ChaCha20/XChaCha20 and AES AEAD apps. Reduced-round options, less commonly reviewed primitives and custom combinations are experimental. RC4 and all nine toys are unsuitable for secrets even though their envelopes detect tampering. Toy outputs can reveal substantial or complete plaintext structure.
+
+Each application accepts only ordinary filename arguments beside its executable. It rejects directory traversal, absolute paths, alternate streams, Windows device names, symlink/reparse-point inputs, directories, using the key/executable as data, and existing output paths. File opening rejects links again using platform flags and verifies the opened object's metadata. The executable directory itself must be trusted: this is not a sandbox against another process that can modify that directory or the executable. Files can still be modified concurrently by another process; close editors/writers before encryption.
+
+Output uses a private temporary file in the same directory and a no-clobber publication. Unix files are created with mode 0600; Windows files use a protected owner-and-SYSTEM DACL at creation. Existing key/input files keep their existing permissions. There is no ACL hardening of the surrounding directory, secure deletion, crash-safe directory fsync guarantee, or protection from administrator/root access. Disk-full errors do not replace existing files, but filesystems and power loss can still require recovery from backups.
+
+Whole-file processing uses several memory buffers. Plaintext is capped at 64 MiB, key files at 1 MiB, and encrypted-file sizes are bounded before allocation. Buffers owned by the wrapper and supported cipher schedules use zeroization where practical. Copies in operating system caches, swap, crash dumps, compiler temporaries, library internals and terminals are outside that guarantee. Authentication does not hide file length or app ID, and does not stop replay or replacement with another valid file encrypted under the same app/key.
+
+No app modifies Windows security settings, downloads executables, installs a service, or needs administrator access for normal use. Do not disable antivirus for these apps. Build/test errors should be investigated as specific errors.
+
+See `verification/dependency-advisories.json` for the exact RustSec snapshot and scanner method. No current matching advisory does not prove a dependency is secure. Keep `Cargo.lock`, rerun validation after dependency updates, and never silently reinterpret an existing format ID.

@@ -1,0 +1,1519 @@
+[
+  {
+    "id": 1,
+    "app": "a1",
+    "name": "ChaCha20Poly1305",
+    "engine": "chacha20poly1305::ChaCha20Poly1305",
+    "deps": [
+      "chacha20poly1305"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 12,
+    "category": "established primitive",
+    "note": ""
+  },
+  {
+    "id": 2,
+    "app": "a2",
+    "name": "XChaCha20Poly1305",
+    "engine": "chacha20poly1305::XChaCha20Poly1305",
+    "deps": [
+      "chacha20poly1305"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 24,
+    "category": "established primitive",
+    "note": ""
+  },
+  {
+    "id": 3,
+    "app": "a3",
+    "name": "AES-128-GCM",
+    "engine": "aes_gcm::AesGcm<aes::Aes128, aead::consts::U12>",
+    "deps": [
+      "aes-gcm",
+      "aes"
+    ],
+    "kind": "aead",
+    "key_len": 16,
+    "nonce_len": 12,
+    "category": "established primitive",
+    "note": ""
+  },
+  {
+    "id": 4,
+    "app": "a4",
+    "name": "AES-192-GCM",
+    "engine": "aes_gcm::AesGcm<aes::Aes192, aead::consts::U12>",
+    "deps": [
+      "aes-gcm",
+      "aes"
+    ],
+    "kind": "aead",
+    "key_len": 24,
+    "nonce_len": 12,
+    "category": "established primitive",
+    "note": ""
+  },
+  {
+    "id": 5,
+    "app": "a5",
+    "name": "AES-256-GCM",
+    "engine": "aes_gcm::AesGcm<aes::Aes256, aead::consts::U12>",
+    "deps": [
+      "aes-gcm",
+      "aes"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 12,
+    "category": "established primitive",
+    "note": ""
+  },
+  {
+    "id": 6,
+    "app": "a6",
+    "name": "AES-128-GCM-SIV",
+    "engine": "aes_gcm_siv::Aes128GcmSiv",
+    "deps": [
+      "aes-gcm-siv"
+    ],
+    "kind": "aead",
+    "key_len": 16,
+    "nonce_len": 12,
+    "category": "established primitive",
+    "note": ""
+  },
+  {
+    "id": 7,
+    "app": "a7",
+    "name": "AES-256-GCM-SIV",
+    "engine": "aes_gcm_siv::Aes256GcmSiv",
+    "deps": [
+      "aes-gcm-siv"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 12,
+    "category": "established primitive",
+    "note": ""
+  },
+  {
+    "id": 8,
+    "app": "a8",
+    "name": "AES-128-SIV",
+    "engine": "aes_siv::Aes128SivAead",
+    "deps": [
+      "aes-siv"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "SIV uses two AES keys: the total derived key is twice the AES key size."
+  },
+  {
+    "id": 9,
+    "app": "a9",
+    "name": "AES-256-SIV",
+    "engine": "aes_siv::Aes256SivAead",
+    "deps": [
+      "aes-siv"
+    ],
+    "kind": "aead",
+    "key_len": 64,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "SIV uses two AES keys: the total derived key is twice the AES key size."
+  },
+  {
+    "id": 10,
+    "app": "a10",
+    "name": "Ascon-AEAD128",
+    "engine": "ascon_aead::AsconAead128",
+    "deps": [
+      "ascon-aead"
+    ],
+    "kind": "aead",
+    "key_len": 16,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": ""
+  },
+  {
+    "id": 11,
+    "app": "a11",
+    "name": "ChaCha8Poly1305",
+    "engine": "chacha20poly1305::ChaCha8Poly1305",
+    "deps": [
+      "chacha20poly1305"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 12,
+    "category": "reduced-round / experimental",
+    "note": ""
+  },
+  {
+    "id": 12,
+    "app": "a12",
+    "name": "ChaCha12Poly1305",
+    "engine": "chacha20poly1305::ChaCha12Poly1305",
+    "deps": [
+      "chacha20poly1305"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 12,
+    "category": "reduced-round / experimental",
+    "note": ""
+  },
+  {
+    "id": 13,
+    "app": "a13",
+    "name": "XChaCha8Poly1305",
+    "engine": "chacha20poly1305::XChaCha8Poly1305",
+    "deps": [
+      "chacha20poly1305"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 24,
+    "category": "reduced-round / experimental",
+    "note": ""
+  },
+  {
+    "id": 14,
+    "app": "a14",
+    "name": "XChaCha12Poly1305",
+    "engine": "chacha20poly1305::XChaCha12Poly1305",
+    "deps": [
+      "chacha20poly1305"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 24,
+    "category": "reduced-round / experimental",
+    "note": ""
+  },
+  {
+    "id": 15,
+    "app": "a15",
+    "name": "AES-128-EAX",
+    "engine": "eax::Eax<aes::Aes128>",
+    "deps": [
+      "aes",
+      "eax"
+    ],
+    "kind": "aead",
+    "key_len": 16,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 16,
+    "app": "a16",
+    "name": "AES-192-EAX",
+    "engine": "eax::Eax<aes::Aes192>",
+    "deps": [
+      "aes",
+      "eax"
+    ],
+    "kind": "aead",
+    "key_len": 24,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 17,
+    "app": "a17",
+    "name": "AES-256-EAX",
+    "engine": "eax::Eax<aes::Aes256>",
+    "deps": [
+      "aes",
+      "eax"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 18,
+    "app": "a18",
+    "name": "CAMELLIA-128-EAX",
+    "engine": "eax::Eax<camellia::Camellia128>",
+    "deps": [
+      "camellia",
+      "eax"
+    ],
+    "kind": "aead",
+    "key_len": 16,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 19,
+    "app": "a19",
+    "name": "CAMELLIA-192-EAX",
+    "engine": "eax::Eax<camellia::Camellia192>",
+    "deps": [
+      "camellia",
+      "eax"
+    ],
+    "kind": "aead",
+    "key_len": 24,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 20,
+    "app": "a20",
+    "name": "CAMELLIA-256-EAX",
+    "engine": "eax::Eax<camellia::Camellia256>",
+    "deps": [
+      "camellia",
+      "eax"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 21,
+    "app": "a21",
+    "name": "ARIA-128-EAX",
+    "engine": "eax::Eax<aria::Aria128>",
+    "deps": [
+      "aria",
+      "eax"
+    ],
+    "kind": "aead",
+    "key_len": 16,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 22,
+    "app": "a22",
+    "name": "ARIA-192-EAX",
+    "engine": "eax::Eax<aria::Aria192>",
+    "deps": [
+      "aria",
+      "eax"
+    ],
+    "kind": "aead",
+    "key_len": 24,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 23,
+    "app": "a23",
+    "name": "ARIA-256-EAX",
+    "engine": "eax::Eax<aria::Aria256>",
+    "deps": [
+      "aria",
+      "eax"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 24,
+    "app": "a24",
+    "name": "Serpent-256-EAX",
+    "engine": "eax::Eax<Serpent256>",
+    "deps": [
+      "serpent",
+      "eax"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "composed / experimental",
+    "note": "",
+    "serpent": true
+  },
+  {
+    "id": 25,
+    "app": "a25",
+    "name": "Twofish-256-EAX",
+    "engine": "eax::Eax<twofish::Twofish>",
+    "deps": [
+      "twofish",
+      "eax"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "composed / experimental",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 26,
+    "app": "a26",
+    "name": "SM4-128-EAX",
+    "engine": "eax::Eax<sm4::Sm4>",
+    "deps": [
+      "sm4",
+      "eax"
+    ],
+    "kind": "aead",
+    "key_len": 16,
+    "nonce_len": 16,
+    "category": "composed / experimental",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 27,
+    "app": "a27",
+    "name": "Kuznyechik-256-EAX",
+    "engine": "eax::Eax<kuznyechik::Kuznyechik>",
+    "deps": [
+      "kuznyechik",
+      "eax"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "composed / experimental",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 28,
+    "app": "a28",
+    "name": "CAST6-256-EAX",
+    "engine": "eax::Eax<cast6::Cast6>",
+    "deps": [
+      "cast6",
+      "eax"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "composed / experimental",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 29,
+    "app": "a29",
+    "name": "RC6-256-EAX",
+    "engine": "eax::Eax<Rc6_256>",
+    "deps": [
+      "rc6",
+      "eax"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "composed / experimental",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 30,
+    "app": "a30",
+    "name": "AES-128-CCM",
+    "engine": "ccm::Ccm<aes::Aes128, aead::consts::U16, aead::consts::U11>",
+    "deps": [
+      "aes",
+      "ccm"
+    ],
+    "kind": "aead",
+    "key_len": 16,
+    "nonce_len": 11,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 31,
+    "app": "a31",
+    "name": "AES-192-CCM",
+    "engine": "ccm::Ccm<aes::Aes192, aead::consts::U16, aead::consts::U11>",
+    "deps": [
+      "aes",
+      "ccm"
+    ],
+    "kind": "aead",
+    "key_len": 24,
+    "nonce_len": 11,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 32,
+    "app": "a32",
+    "name": "AES-256-CCM",
+    "engine": "ccm::Ccm<aes::Aes256, aead::consts::U16, aead::consts::U11>",
+    "deps": [
+      "aes",
+      "ccm"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 11,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 33,
+    "app": "a33",
+    "name": "CAMELLIA-128-CCM",
+    "engine": "ccm::Ccm<camellia::Camellia128, aead::consts::U16, aead::consts::U11>",
+    "deps": [
+      "camellia",
+      "ccm"
+    ],
+    "kind": "aead",
+    "key_len": 16,
+    "nonce_len": 11,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 34,
+    "app": "a34",
+    "name": "CAMELLIA-192-CCM",
+    "engine": "ccm::Ccm<camellia::Camellia192, aead::consts::U16, aead::consts::U11>",
+    "deps": [
+      "camellia",
+      "ccm"
+    ],
+    "kind": "aead",
+    "key_len": 24,
+    "nonce_len": 11,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 35,
+    "app": "a35",
+    "name": "CAMELLIA-256-CCM",
+    "engine": "ccm::Ccm<camellia::Camellia256, aead::consts::U16, aead::consts::U11>",
+    "deps": [
+      "camellia",
+      "ccm"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 11,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 36,
+    "app": "a36",
+    "name": "ARIA-128-CCM",
+    "engine": "ccm::Ccm<aria::Aria128, aead::consts::U16, aead::consts::U11>",
+    "deps": [
+      "aria",
+      "ccm"
+    ],
+    "kind": "aead",
+    "key_len": 16,
+    "nonce_len": 11,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 37,
+    "app": "a37",
+    "name": "ARIA-192-CCM",
+    "engine": "ccm::Ccm<aria::Aria192, aead::consts::U16, aead::consts::U11>",
+    "deps": [
+      "aria",
+      "ccm"
+    ],
+    "kind": "aead",
+    "key_len": 24,
+    "nonce_len": 11,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 38,
+    "app": "a38",
+    "name": "ARIA-256-CCM",
+    "engine": "ccm::Ccm<aria::Aria256, aead::consts::U16, aead::consts::U11>",
+    "deps": [
+      "aria",
+      "ccm"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 11,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 39,
+    "app": "a39",
+    "name": "Serpent-256-CCM",
+    "engine": "ccm::Ccm<Serpent256, aead::consts::U16, aead::consts::U11>",
+    "deps": [
+      "serpent",
+      "ccm"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 11,
+    "category": "composed / experimental",
+    "note": "",
+    "serpent": true
+  },
+  {
+    "id": 40,
+    "app": "a40",
+    "name": "Twofish-256-CCM",
+    "engine": "ccm::Ccm<twofish::Twofish, aead::consts::U16, aead::consts::U11>",
+    "deps": [
+      "twofish",
+      "ccm"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 11,
+    "category": "composed / experimental",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 41,
+    "app": "a41",
+    "name": "SM4-128-CCM",
+    "engine": "ccm::Ccm<sm4::Sm4, aead::consts::U16, aead::consts::U11>",
+    "deps": [
+      "sm4",
+      "ccm"
+    ],
+    "kind": "aead",
+    "key_len": 16,
+    "nonce_len": 11,
+    "category": "composed / experimental",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 42,
+    "app": "a42",
+    "name": "Kuznyechik-256-CCM",
+    "engine": "ccm::Ccm<kuznyechik::Kuznyechik, aead::consts::U16, aead::consts::U11>",
+    "deps": [
+      "kuznyechik",
+      "ccm"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 11,
+    "category": "composed / experimental",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 43,
+    "app": "a43",
+    "name": "CAST6-256-CCM",
+    "engine": "ccm::Ccm<cast6::Cast6, aead::consts::U16, aead::consts::U11>",
+    "deps": [
+      "cast6",
+      "ccm"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 11,
+    "category": "composed / experimental",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 44,
+    "app": "a44",
+    "name": "RC6-256-CCM",
+    "engine": "ccm::Ccm<Rc6_256, aead::consts::U16, aead::consts::U11>",
+    "deps": [
+      "rc6",
+      "ccm"
+    ],
+    "kind": "aead",
+    "key_len": 32,
+    "nonce_len": 11,
+    "category": "composed / experimental",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 45,
+    "app": "a45",
+    "name": "AES-128-CTR",
+    "engine": "ctr::Ctr64BE<aes::Aes128>",
+    "deps": [
+      "aes",
+      "ctr"
+    ],
+    "kind": "stream",
+    "key_len": 16,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 46,
+    "app": "a46",
+    "name": "AES-192-CTR",
+    "engine": "ctr::Ctr64BE<aes::Aes192>",
+    "deps": [
+      "aes",
+      "ctr"
+    ],
+    "kind": "stream",
+    "key_len": 24,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 47,
+    "app": "a47",
+    "name": "AES-256-CTR",
+    "engine": "ctr::Ctr64BE<aes::Aes256>",
+    "deps": [
+      "aes",
+      "ctr"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 48,
+    "app": "a48",
+    "name": "CAMELLIA-128-CTR",
+    "engine": "ctr::Ctr64BE<camellia::Camellia128>",
+    "deps": [
+      "camellia",
+      "ctr"
+    ],
+    "kind": "stream",
+    "key_len": 16,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 49,
+    "app": "a49",
+    "name": "CAMELLIA-192-CTR",
+    "engine": "ctr::Ctr64BE<camellia::Camellia192>",
+    "deps": [
+      "camellia",
+      "ctr"
+    ],
+    "kind": "stream",
+    "key_len": 24,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 50,
+    "app": "a50",
+    "name": "CAMELLIA-256-CTR",
+    "engine": "ctr::Ctr64BE<camellia::Camellia256>",
+    "deps": [
+      "camellia",
+      "ctr"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 51,
+    "app": "a51",
+    "name": "ARIA-128-CTR",
+    "engine": "ctr::Ctr64BE<aria::Aria128>",
+    "deps": [
+      "aria",
+      "ctr"
+    ],
+    "kind": "stream",
+    "key_len": 16,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 52,
+    "app": "a52",
+    "name": "ARIA-192-CTR",
+    "engine": "ctr::Ctr64BE<aria::Aria192>",
+    "deps": [
+      "aria",
+      "ctr"
+    ],
+    "kind": "stream",
+    "key_len": 24,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 53,
+    "app": "a53",
+    "name": "ARIA-256-CTR",
+    "engine": "ctr::Ctr64BE<aria::Aria256>",
+    "deps": [
+      "aria",
+      "ctr"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 54,
+    "app": "a54",
+    "name": "Serpent-256-CTR",
+    "engine": "ctr::Ctr64BE<Serpent256>",
+    "deps": [
+      "serpent",
+      "ctr"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "composed / experimental",
+    "note": "",
+    "serpent": true
+  },
+  {
+    "id": 55,
+    "app": "a55",
+    "name": "Twofish-256-CTR",
+    "engine": "ctr::Ctr64BE<twofish::Twofish>",
+    "deps": [
+      "twofish",
+      "ctr"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "composed / experimental",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 56,
+    "app": "a56",
+    "name": "SM4-128-CTR",
+    "engine": "ctr::Ctr64BE<sm4::Sm4>",
+    "deps": [
+      "sm4",
+      "ctr"
+    ],
+    "kind": "stream",
+    "key_len": 16,
+    "nonce_len": 16,
+    "category": "composed / experimental",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 57,
+    "app": "a57",
+    "name": "Kuznyechik-256-CTR",
+    "engine": "ctr::Ctr64BE<kuznyechik::Kuznyechik>",
+    "deps": [
+      "kuznyechik",
+      "ctr"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "composed / experimental",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 58,
+    "app": "a58",
+    "name": "CAST6-256-CTR",
+    "engine": "ctr::Ctr64BE<cast6::Cast6>",
+    "deps": [
+      "cast6",
+      "ctr"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "composed / experimental",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 59,
+    "app": "a59",
+    "name": "RC6-256-CTR",
+    "engine": "ctr::Ctr64BE<Rc6_256>",
+    "deps": [
+      "rc6",
+      "ctr"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "composed / experimental",
+    "note": "",
+    "serpent": false
+  },
+  {
+    "id": 60,
+    "app": "a60",
+    "name": "AES-128-CBC",
+    "engine": "aes::Aes128",
+    "deps": [
+      "aes",
+      "cbc"
+    ],
+    "kind": "cbc",
+    "key_len": 16,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "CBC uses PKCS#7 padding.",
+    "serpent": false
+  },
+  {
+    "id": 61,
+    "app": "a61",
+    "name": "AES-192-CBC",
+    "engine": "aes::Aes192",
+    "deps": [
+      "aes",
+      "cbc"
+    ],
+    "kind": "cbc",
+    "key_len": 24,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "CBC uses PKCS#7 padding.",
+    "serpent": false
+  },
+  {
+    "id": 62,
+    "app": "a62",
+    "name": "AES-256-CBC",
+    "engine": "aes::Aes256",
+    "deps": [
+      "aes",
+      "cbc"
+    ],
+    "kind": "cbc",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "CBC uses PKCS#7 padding.",
+    "serpent": false
+  },
+  {
+    "id": 63,
+    "app": "a63",
+    "name": "CAMELLIA-128-CBC",
+    "engine": "camellia::Camellia128",
+    "deps": [
+      "camellia",
+      "cbc"
+    ],
+    "kind": "cbc",
+    "key_len": 16,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "CBC uses PKCS#7 padding.",
+    "serpent": false
+  },
+  {
+    "id": 64,
+    "app": "a64",
+    "name": "CAMELLIA-192-CBC",
+    "engine": "camellia::Camellia192",
+    "deps": [
+      "camellia",
+      "cbc"
+    ],
+    "kind": "cbc",
+    "key_len": 24,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "CBC uses PKCS#7 padding.",
+    "serpent": false
+  },
+  {
+    "id": 65,
+    "app": "a65",
+    "name": "CAMELLIA-256-CBC",
+    "engine": "camellia::Camellia256",
+    "deps": [
+      "camellia",
+      "cbc"
+    ],
+    "kind": "cbc",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "CBC uses PKCS#7 padding.",
+    "serpent": false
+  },
+  {
+    "id": 66,
+    "app": "a66",
+    "name": "ARIA-128-CBC",
+    "engine": "aria::Aria128",
+    "deps": [
+      "aria",
+      "cbc"
+    ],
+    "kind": "cbc",
+    "key_len": 16,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "CBC uses PKCS#7 padding.",
+    "serpent": false
+  },
+  {
+    "id": 67,
+    "app": "a67",
+    "name": "ARIA-192-CBC",
+    "engine": "aria::Aria192",
+    "deps": [
+      "aria",
+      "cbc"
+    ],
+    "kind": "cbc",
+    "key_len": 24,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "CBC uses PKCS#7 padding.",
+    "serpent": false
+  },
+  {
+    "id": 68,
+    "app": "a68",
+    "name": "ARIA-256-CBC",
+    "engine": "aria::Aria256",
+    "deps": [
+      "aria",
+      "cbc"
+    ],
+    "kind": "cbc",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "established primitive",
+    "note": "CBC uses PKCS#7 padding.",
+    "serpent": false
+  },
+  {
+    "id": 69,
+    "app": "a69",
+    "name": "Serpent-256-CBC",
+    "engine": "Serpent256",
+    "deps": [
+      "serpent",
+      "cbc"
+    ],
+    "kind": "cbc",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "composed / experimental",
+    "note": "CBC uses PKCS#7 padding.",
+    "serpent": true
+  },
+  {
+    "id": 70,
+    "app": "a70",
+    "name": "Twofish-256-CBC",
+    "engine": "twofish::Twofish",
+    "deps": [
+      "twofish",
+      "cbc"
+    ],
+    "kind": "cbc",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "composed / experimental",
+    "note": "CBC uses PKCS#7 padding.",
+    "serpent": false
+  },
+  {
+    "id": 71,
+    "app": "a71",
+    "name": "SM4-128-CBC",
+    "engine": "sm4::Sm4",
+    "deps": [
+      "sm4",
+      "cbc"
+    ],
+    "kind": "cbc",
+    "key_len": 16,
+    "nonce_len": 16,
+    "category": "composed / experimental",
+    "note": "CBC uses PKCS#7 padding.",
+    "serpent": false
+  },
+  {
+    "id": 72,
+    "app": "a72",
+    "name": "Kuznyechik-256-CBC",
+    "engine": "kuznyechik::Kuznyechik",
+    "deps": [
+      "kuznyechik",
+      "cbc"
+    ],
+    "kind": "cbc",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "composed / experimental",
+    "note": "CBC uses PKCS#7 padding.",
+    "serpent": false
+  },
+  {
+    "id": 73,
+    "app": "a73",
+    "name": "CAST6-256-CBC",
+    "engine": "cast6::Cast6",
+    "deps": [
+      "cast6",
+      "cbc"
+    ],
+    "kind": "cbc",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "composed / experimental",
+    "note": "CBC uses PKCS#7 padding.",
+    "serpent": false
+  },
+  {
+    "id": 74,
+    "app": "a74",
+    "name": "RC6-256-CBC",
+    "engine": "Rc6_256",
+    "deps": [
+      "rc6",
+      "cbc"
+    ],
+    "kind": "cbc",
+    "key_len": 32,
+    "nonce_len": 16,
+    "category": "composed / experimental",
+    "note": "CBC uses PKCS#7 padding.",
+    "serpent": false
+  },
+  {
+    "id": 75,
+    "app": "a75",
+    "name": "ChaCha8-HMAC",
+    "engine": "chacha20::ChaCha8",
+    "deps": [
+      "chacha20"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 12,
+    "category": "reduced-round / experimental",
+    "note": ""
+  },
+  {
+    "id": 76,
+    "app": "a76",
+    "name": "ChaCha12-HMAC",
+    "engine": "chacha20::ChaCha12",
+    "deps": [
+      "chacha20"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 12,
+    "category": "reduced-round / experimental",
+    "note": ""
+  },
+  {
+    "id": 77,
+    "app": "a77",
+    "name": "ChaCha20-HMAC",
+    "engine": "chacha20::ChaCha20",
+    "deps": [
+      "chacha20"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 12,
+    "category": "established primitive",
+    "note": ""
+  },
+  {
+    "id": 78,
+    "app": "a78",
+    "name": "XChaCha8-HMAC",
+    "engine": "chacha20::XChaCha8",
+    "deps": [
+      "chacha20"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 24,
+    "category": "reduced-round / experimental",
+    "note": ""
+  },
+  {
+    "id": 79,
+    "app": "a79",
+    "name": "XChaCha12-HMAC",
+    "engine": "chacha20::XChaCha12",
+    "deps": [
+      "chacha20"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 24,
+    "category": "reduced-round / experimental",
+    "note": ""
+  },
+  {
+    "id": 80,
+    "app": "a80",
+    "name": "XChaCha20-HMAC",
+    "engine": "chacha20::XChaCha20",
+    "deps": [
+      "chacha20"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 24,
+    "category": "established primitive",
+    "note": ""
+  },
+  {
+    "id": 81,
+    "app": "a81",
+    "name": "Salsa8-HMAC",
+    "engine": "salsa20::Salsa8",
+    "deps": [
+      "salsa20"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 8,
+    "category": "reduced-round / experimental",
+    "note": ""
+  },
+  {
+    "id": 82,
+    "app": "a82",
+    "name": "Salsa12-HMAC",
+    "engine": "salsa20::Salsa12",
+    "deps": [
+      "salsa20"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 8,
+    "category": "reduced-round / experimental",
+    "note": ""
+  },
+  {
+    "id": 83,
+    "app": "a83",
+    "name": "Salsa20-HMAC",
+    "engine": "salsa20::Salsa20",
+    "deps": [
+      "salsa20"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 8,
+    "category": "established primitive",
+    "note": ""
+  },
+  {
+    "id": 84,
+    "app": "a84",
+    "name": "XSalsa8-HMAC",
+    "engine": "salsa20::XSalsa8",
+    "deps": [
+      "salsa20"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 24,
+    "category": "reduced-round / experimental",
+    "note": ""
+  },
+  {
+    "id": 85,
+    "app": "a85",
+    "name": "XSalsa12-HMAC",
+    "engine": "salsa20::XSalsa12",
+    "deps": [
+      "salsa20"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 24,
+    "category": "reduced-round / experimental",
+    "note": ""
+  },
+  {
+    "id": 86,
+    "app": "a86",
+    "name": "XSalsa20-HMAC",
+    "engine": "salsa20::XSalsa20",
+    "deps": [
+      "salsa20"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 24,
+    "category": "established primitive",
+    "note": ""
+  },
+  {
+    "id": 87,
+    "app": "a87",
+    "name": "Threefish-256-CTR",
+    "engine": "ctr::Ctr64BE<threefish::Threefish256>",
+    "deps": [
+      "threefish",
+      "ctr"
+    ],
+    "kind": "stream",
+    "key_len": 32,
+    "nonce_len": 32,
+    "category": "composed / experimental",
+    "note": "Threefish tweak is all zero; the mode is CTR64BE over the full block. This is a custom file construction, not Skein or a standardized Threefish AEAD."
+  },
+  {
+    "id": 88,
+    "app": "a88",
+    "name": "Threefish-512-CTR",
+    "engine": "ctr::Ctr64BE<threefish::Threefish512>",
+    "deps": [
+      "threefish",
+      "ctr"
+    ],
+    "kind": "stream",
+    "key_len": 64,
+    "nonce_len": 64,
+    "category": "composed / experimental",
+    "note": "Threefish tweak is all zero; the mode is CTR64BE over the full block. This is a custom file construction, not Skein or a standardized Threefish AEAD."
+  },
+  {
+    "id": 89,
+    "app": "a89",
+    "name": "Threefish-1024-CTR",
+    "engine": "ctr::Ctr64BE<threefish::Threefish1024>",
+    "deps": [
+      "threefish",
+      "ctr"
+    ],
+    "kind": "stream",
+    "key_len": 128,
+    "nonce_len": 128,
+    "category": "composed / experimental",
+    "note": "Threefish tweak is all zero; the mode is CTR64BE over the full block. This is a custom file construction, not Skein or a standardized Threefish AEAD."
+  },
+  {
+    "id": 90,
+    "app": "a90",
+    "name": "RC4-128-HMAC",
+    "engine": "rc4::Rc4",
+    "deps": [
+      "rc4"
+    ],
+    "kind": "rc4",
+    "key_len": 16,
+    "nonce_len": 0,
+    "category": "obsolete / insecure",
+    "note": "RC4 has serious known biases and is unsuitable for confidential data."
+  },
+  {
+    "id": 91,
+    "app": "a91",
+    "name": "RC4-256-HMAC",
+    "engine": "rc4::Rc4",
+    "deps": [
+      "rc4"
+    ],
+    "kind": "rc4",
+    "key_len": 32,
+    "nonce_len": 0,
+    "category": "obsolete / insecure",
+    "note": "RC4 has serious known biases and is unsuitable for confidential data."
+  },
+  {
+    "id": 92,
+    "app": "a92",
+    "name": "Toy repeating-xor",
+    "engine": "",
+    "deps": [],
+    "kind": "toy",
+    "key_len": 32,
+    "nonce_len": 0,
+    "category": "TOY / insecure",
+    "note": "Educational reversible byte transform. HMAC detects modification but does not make the toy cipher confidential.",
+    "toy": "repeating-xor"
+  },
+  {
+    "id": 93,
+    "app": "a93",
+    "name": "Toy repeating-add",
+    "engine": "",
+    "deps": [],
+    "kind": "toy",
+    "key_len": 32,
+    "nonce_len": 0,
+    "category": "TOY / insecure",
+    "note": "Educational reversible byte transform. HMAC detects modification but does not make the toy cipher confidential.",
+    "toy": "repeating-add"
+  },
+  {
+    "id": 94,
+    "app": "a94",
+    "name": "Toy beaufort-byte",
+    "engine": "",
+    "deps": [],
+    "kind": "toy",
+    "key_len": 32,
+    "nonce_len": 0,
+    "category": "TOY / insecure",
+    "note": "Educational reversible byte transform. HMAC detects modification but does not make the toy cipher confidential.",
+    "toy": "beaufort-byte"
+  },
+  {
+    "id": 95,
+    "app": "a95",
+    "name": "Toy affine-byte",
+    "engine": "",
+    "deps": [],
+    "kind": "toy",
+    "key_len": 32,
+    "nonce_len": 0,
+    "category": "TOY / insecure",
+    "note": "Educational reversible byte transform. HMAC detects modification but does not make the toy cipher confidential.",
+    "toy": "affine-byte"
+  },
+  {
+    "id": 96,
+    "app": "a96",
+    "name": "Toy rotate-byte",
+    "engine": "",
+    "deps": [],
+    "kind": "toy",
+    "key_len": 32,
+    "nonce_len": 0,
+    "category": "TOY / insecure",
+    "note": "Educational reversible byte transform. HMAC detects modification but does not make the toy cipher confidential.",
+    "toy": "rotate-byte"
+  },
+  {
+    "id": 97,
+    "app": "a97",
+    "name": "Toy xor-rotate",
+    "engine": "",
+    "deps": [],
+    "kind": "toy",
+    "key_len": 32,
+    "nonce_len": 0,
+    "category": "TOY / insecure",
+    "note": "Educational reversible byte transform. HMAC detects modification but does not make the toy cipher confidential.",
+    "toy": "xor-rotate"
+  },
+  {
+    "id": 98,
+    "app": "a98",
+    "name": "Toy substitution",
+    "engine": "",
+    "deps": [],
+    "kind": "toy",
+    "key_len": 32,
+    "nonce_len": 0,
+    "category": "TOY / insecure",
+    "note": "Educational reversible byte transform. HMAC detects modification but does not make the toy cipher confidential.",
+    "toy": "substitution"
+  },
+  {
+    "id": 99,
+    "app": "a99",
+    "name": "Toy xorshift64",
+    "engine": "",
+    "deps": [],
+    "kind": "toy",
+    "key_len": 32,
+    "nonce_len": 0,
+    "category": "TOY / insecure",
+    "note": "Educational reversible byte transform. HMAC detects modification but does not make the toy cipher confidential.",
+    "toy": "xorshift64"
+  },
+  {
+    "id": 100,
+    "app": "a100",
+    "name": "Toy lcg64",
+    "engine": "",
+    "deps": [],
+    "kind": "toy",
+    "key_len": 32,
+    "nonce_len": 0,
+    "category": "TOY / insecure",
+    "note": "Educational reversible byte transform. HMAC detects modification but does not make the toy cipher confidential.",
+    "toy": "lcg64"
+  }
+]

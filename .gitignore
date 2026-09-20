@@ -1,0 +1,5 @@
+/target/
+/dist/
+**/key.key
+**/*.tmp
+/verification/runtime/

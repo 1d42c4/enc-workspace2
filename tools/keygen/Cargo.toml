@@ -1,0 +1,10 @@
+[package]
+name = "keygen"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish = false
+[dependencies]
+keyfile-core.workspace = true
+[lints]
+workspace = true

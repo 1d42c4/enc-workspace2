@@ -1,0 +1,19 @@
+[package]
+name = "a76"
+description = "ChaCha12-HMAC file encryption with executable-local key.key"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish = false
+
+[dependencies]
+keyfile-core.workspace = true
+zeroize.workspace = true
+chacha20.workspace = true
+cipher.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+
+[lints]
+workspace = true

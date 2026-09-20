@@ -1,0 +1,20 @@
+[package]
+name = "a53"
+description = "ARIA-256-CTR file encryption with executable-local key.key"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish = false
+
+[dependencies]
+keyfile-core.workspace = true
+zeroize.workspace = true
+aria.workspace = true
+cipher.workspace = true
+ctr.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+
+[lints]
+workspace = true

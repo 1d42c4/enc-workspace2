@@ -1,0 +1,21 @@
+[package]
+name = "a24"
+description = "Serpent-256-EAX file encryption with executable-local key.key"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish = false
+
+[dependencies]
+keyfile-core.workspace = true
+zeroize.workspace = true
+aead.workspace = true
+cipher.workspace = true
+eax.workspace = true
+serpent.workspace = true
+
+[dev-dependencies]
+tempfile.workspace = true
+
+[lints]
+workspace = true

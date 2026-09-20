@@ -1,0 +1,227 @@
+{
+  "implementations": [
+    "Python hashlib/hmac",
+    "PyCryptodome 3.23.0",
+    "cryptography 50.0.1/OpenSSL (CTR64BE composed independently over ECB)"
+  ],
+  "apps_checked": 43,
+  "directional_checks": 602,
+  "results": [
+    {
+      "app": "a1",
+      "algorithm": "ChaCha20Poly1305",
+      "directional_checks": 14
+    },
+    {
+      "app": "a2",
+      "algorithm": "XChaCha20Poly1305",
+      "directional_checks": 14
+    },
+    {
+      "app": "a3",
+      "algorithm": "AES-128-GCM",
+      "directional_checks": 14
+    },
+    {
+      "app": "a4",
+      "algorithm": "AES-192-GCM",
+      "directional_checks": 14
+    },
+    {
+      "app": "a5",
+      "algorithm": "AES-256-GCM",
+      "directional_checks": 14
+    },
+    {
+      "app": "a6",
+      "algorithm": "AES-128-GCM-SIV",
+      "directional_checks": 14
+    },
+    {
+      "app": "a7",
+      "algorithm": "AES-256-GCM-SIV",
+      "directional_checks": 14
+    },
+    {
+      "app": "a8",
+      "algorithm": "AES-128-SIV",
+      "directional_checks": 14
+    },
+    {
+      "app": "a9",
+      "algorithm": "AES-256-SIV",
+      "directional_checks": 14
+    },
+    {
+      "app": "a15",
+      "algorithm": "AES-128-EAX",
+      "directional_checks": 14
+    },
+    {
+      "app": "a16",
+      "algorithm": "AES-192-EAX",
+      "directional_checks": 14
+    },
+    {
+      "app": "a17",
+      "algorithm": "AES-256-EAX",
+      "directional_checks": 14
+    },
+    {
+      "app": "a30",
+      "algorithm": "AES-128-CCM",
+      "directional_checks": 14
+    },
+    {
+      "app": "a31",
+      "algorithm": "AES-192-CCM",
+      "directional_checks": 14
+    },
+    {
+      "app": "a32",
+      "algorithm": "AES-256-CCM",
+      "directional_checks": 14
+    },
+    {
+      "app": "a45",
+      "algorithm": "AES-128-CTR",
+      "directional_checks": 14
+    },
+    {
+      "app": "a46",
+      "algorithm": "AES-192-CTR",
+      "directional_checks": 14
+    },
+    {
+      "app": "a47",
+      "algorithm": "AES-256-CTR",
+      "directional_checks": 14
+    },
+    {
+      "app": "a48",
+      "algorithm": "CAMELLIA-128-CTR",
+      "directional_checks": 14
+    },
+    {
+      "app": "a49",
+      "algorithm": "CAMELLIA-192-CTR",
+      "directional_checks": 14
+    },
+    {
+      "app": "a50",
+      "algorithm": "CAMELLIA-256-CTR",
+      "directional_checks": 14
+    },
+    {
+      "app": "a56",
+      "algorithm": "SM4-128-CTR",
+      "directional_checks": 14
+    },
+    {
+      "app": "a60",
+      "algorithm": "AES-128-CBC",
+      "directional_checks": 14
+    },
+    {
+      "app": "a61",
+      "algorithm": "AES-192-CBC",
+      "directional_checks": 14
+    },
+    {
+      "app": "a62",
+      "algorithm": "AES-256-CBC",
+      "directional_checks": 14
+    },
+    {
+      "app": "a63",
+      "algorithm": "CAMELLIA-128-CBC",
+      "directional_checks": 14
+    },
+    {
+      "app": "a64",
+      "algorithm": "CAMELLIA-192-CBC",
+      "directional_checks": 14
+    },
+    {
+      "app": "a65",
+      "algorithm": "CAMELLIA-256-CBC",
+      "directional_checks": 14
+    },
+    {
+      "app": "a71",
+      "algorithm": "SM4-128-CBC",
+      "directional_checks": 14
+    },
+    {
+      "app": "a77",
+      "algorithm": "ChaCha20-HMAC",
+      "directional_checks": 14
+    },
+    {
+      "app": "a80",
+      "algorithm": "XChaCha20-HMAC",
+      "directional_checks": 14
+    },
+    {
+      "app": "a83",
+      "algorithm": "Salsa20-HMAC",
+      "directional_checks": 14
+    },
+    {
+      "app": "a90",
+      "algorithm": "RC4-128-HMAC",
+      "directional_checks": 14
+    },
+    {
+      "app": "a91",
+      "algorithm": "RC4-256-HMAC",
+      "directional_checks": 14
+    },
+    {
+      "app": "a92",
+      "algorithm": "Toy repeating-xor",
+      "directional_checks": 14
+    },
+    {
+      "app": "a93",
+      "algorithm": "Toy repeating-add",
+      "directional_checks": 14
+    },
+    {
+      "app": "a94",
+      "algorithm": "Toy beaufort-byte",
+      "directional_checks": 14
+    },
+    {
+      "app": "a95",
+      "algorithm": "Toy affine-byte",
+      "directional_checks": 14
+    },
+    {
+      "app": "a96",
+      "algorithm": "Toy rotate-byte",
+      "directional_checks": 14
+    },
+    {
+      "app": "a97",
+      "algorithm": "Toy xor-rotate",
+      "directional_checks": 14
+    },
+    {
+      "app": "a98",
+      "algorithm": "Toy substitution",
+      "directional_checks": 14
+    },
+    {
+      "app": "a99",
+      "algorithm": "Toy xorshift64",
+      "directional_checks": 14
+    },
+    {
+      "app": "a100",
+      "algorithm": "Toy lcg64",
+      "directional_checks": 14
+    }
+  ],
+  "limitations": "Other algorithms are covered by Rust roundtrip/adversarial/CLI tests and published primitive vectors; no claim of independent interoperability for every app. Toy references are independent Python transcriptions, not external cryptographic validation."
+}

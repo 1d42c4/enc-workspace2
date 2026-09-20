@@ -1,0 +1,49 @@
+[workspace]
+resolver = "3"
+members = ["apps/*", "support/keyfile-core", "tools/keygen"]
+
+[workspace.package]
+version = "1.0.0"
+edition = "2024"
+rust-version = "1.98.1"
+
+[workspace.dependencies]
+keyfile-core = { path = "support/keyfile-core" }
+tempfile = "=3.27.0"
+zeroize = "=1.9.0"
+aead = { version = "=0.6.1", features = ["alloc"] }
+cipher = { version = "=0.5.2", features = ["alloc", "block-padding", "zeroize"] }
+aes = { version = "=0.9.2", features = ["zeroize"] }
+aes-gcm = { version = "=0.11.1", features = ["zeroize"] }
+aes-gcm-siv = { version = "=0.12.1" }
+aes-siv = { version = "=0.8.0" }
+chacha20poly1305 = { version = "=0.11.0", features = ["reduced-round"] }
+ascon-aead = { version = "=0.6.0", features = ["zeroize"] }
+eax = { version = "=0.6.1" }
+ccm = { version = "=0.6.1" }
+ctr = { version = "=0.10.1", features = ["zeroize"] }
+cbc = { version = "=0.2.1", features = ["alloc", "zeroize"] }
+camellia = { version = "=0.2.1", features = ["zeroize"] }
+aria = { version = "=0.2.0", features = ["zeroize"] }
+serpent = { version = "=0.6.0", features = ["zeroize"] }
+twofish = { version = "=0.8.0", features = ["zeroize"] }
+sm4 = { version = "=0.6.0", features = ["zeroize"] }
+kuznyechik = { version = "=0.9.0", features = ["zeroize"] }
+cast6 = { version = "=0.2.0", features = ["zeroize"] }
+rc6 = { version = "=0.1.0", features = ["zeroize"] }
+chacha20 = { version = "=0.10.2", features = ["zeroize", "xchacha"] }
+salsa20 = { version = "=0.11.0", features = ["zeroize"] }
+threefish = { version = "=0.6.0", features = ["zeroize"] }
+rc4 = { version = "=0.2.0", features = ["zeroize"] }
+
+[workspace.lints.rust]
+unsafe_code = "deny"
+
+[profile.release]
+lto = "thin"
+codegen-units = 1
+strip = "symbols"
+overflow-checks = true
+
+[profile.test]
+opt-level = 2

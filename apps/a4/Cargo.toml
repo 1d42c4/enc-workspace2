@@ -1,0 +1,21 @@
+[package]
+name = "a4"
+description = "AES-192-GCM file encryption with executable-local key.key"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish = false
+
+[dependencies]
+keyfile-core.workspace = true
+zeroize.workspace = true
+aead.workspace = true
+aes.workspace = true
+aes-gcm.workspace = true
+
+[dev-dependencies]
+cipher.workspace = true
+tempfile.workspace = true
+
+[lints]
+workspace = true

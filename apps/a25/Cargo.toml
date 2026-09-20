@@ -1,0 +1,21 @@
+[package]
+name = "a25"
+description = "Twofish-256-EAX file encryption with executable-local key.key"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+publish = false
+
+[dependencies]
+keyfile-core.workspace = true
+zeroize.workspace = true
+aead.workspace = true
+eax.workspace = true
+twofish.workspace = true
+
+[dev-dependencies]
+cipher.workspace = true
+tempfile.workspace = true
+
+[lints]
+workspace = true

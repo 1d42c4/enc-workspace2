@@ -1,0 +1,1106 @@
+{
+  "apps_passed": 100,
+  "executable_invocations": 400,
+  "results": [
+    {
+      "app": "a1",
+      "name": "ChaCha20Poly1305",
+      "sha256": "d412d8672524cd144db0f08e24bfd36bc50b2362111ec002410b13ecea9eb48c",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a2",
+      "name": "XChaCha20Poly1305",
+      "sha256": "d672e5b2b1c5c92b94f3643ad4a38f00b4b11a909b6b2b913f43c575ec6fcf9a",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a3",
+      "name": "AES-128-GCM",
+      "sha256": "fc8ca400e2a020e4d91cdd6e17193fa9261e7bb24f0d53d56f421631f338381b",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a4",
+      "name": "AES-192-GCM",
+      "sha256": "4d6e658e5b52a240959ebfb469d558caa9177ce02ab590f1b4ba8a1bfd5238e8",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a5",
+      "name": "AES-256-GCM",
+      "sha256": "fb1b551ad303261efc1bb13f265c31ea29b840f503b6ebb76e4dca92cf624ea0",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a6",
+      "name": "AES-128-GCM-SIV",
+      "sha256": "70d68e13091cd5a5414a66ff348f795cc756ec63bf2462e4be1fc082ac172ba7",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a7",
+      "name": "AES-256-GCM-SIV",
+      "sha256": "ed83040cbb7bffd9aec85daac0c758b8b05ca704d08c7795d6826bd09f5ca3bb",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a8",
+      "name": "AES-128-SIV",
+      "sha256": "5ddd189e1f16f36fe3431ec2b04f11e126ccaf969a1006eda1c2777c6eed2ffe",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a9",
+      "name": "AES-256-SIV",
+      "sha256": "fbc6eee3ac8f0409d1068229dd8a97160b31e346166ba4d4d6e0cf3e7e85c934",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a10",
+      "name": "Ascon-AEAD128",
+      "sha256": "33a93418d445293b781f5681a40a45e6b5361028a5c70b1219ba9361b030ad69",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a11",
+      "name": "ChaCha8Poly1305",
+      "sha256": "f8f93226b37e51f0b7f062838dff95b055410e3e35a0a5d85c44fdaaaa9ca9b3",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a12",
+      "name": "ChaCha12Poly1305",
+      "sha256": "228792a6f4f57f130809555250fffc9b3eff6132b550376b2cba946fef964527",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a13",
+      "name": "XChaCha8Poly1305",
+      "sha256": "ed8a6f748d18098aa1a8f49f6790f360bb1d71854212df7f0de04bb4a9f6299e",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a14",
+      "name": "XChaCha12Poly1305",
+      "sha256": "d63c93697c1fd0c176c9171422724c17fe310df4cbd184c9fa8a575816779f96",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a15",
+      "name": "AES-128-EAX",
+      "sha256": "cd249e2a6e94f51d5b009860a6be90ab70a424b82671bd070df12bffcc2619e9",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a16",
+      "name": "AES-192-EAX",
+      "sha256": "36e3f595d7d360c0565736bb848c861979b176eda708a963fcbd2c3233002b1d",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a17",
+      "name": "AES-256-EAX",
+      "sha256": "f542f9050ae8699703cdc6f041f6b825563d2f205d0ad97ce19e8811c6bbd32f",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a18",
+      "name": "CAMELLIA-128-EAX",
+      "sha256": "47acd6bab3ebfa808d48452048872d554be26fbff71168c2f4d0183d7b562b2b",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a19",
+      "name": "CAMELLIA-192-EAX",
+      "sha256": "c026b4c6e284cdc4af4a289d92c91c62e7c1d3d8deff03d6ec07a57cfb09fe83",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a20",
+      "name": "CAMELLIA-256-EAX",
+      "sha256": "1b8e16b715d32493f072280742d71d3cd4f4eb700043afb6647bc24c9ea6e5b3",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a21",
+      "name": "ARIA-128-EAX",
+      "sha256": "abbce47d9495b8c93afbba4ad5dc3cfc855842836aac04f50f346fb11047eaf0",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a22",
+      "name": "ARIA-192-EAX",
+      "sha256": "6016dbff70c9076578704baaf4b4bdf19c01b006094b4f423c951839fded379a",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a23",
+      "name": "ARIA-256-EAX",
+      "sha256": "0a5cf3f76c30f06a11b0435fe0b821e950581a89fb0c2ce62f2d1aba146e34f1",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a24",
+      "name": "Serpent-256-EAX",
+      "sha256": "d823144417c5e92322106ff8855402ca028dcf9a13451323992913c983b27d04",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a25",
+      "name": "Twofish-256-EAX",
+      "sha256": "45d222cf0896a334347a69619e96635d7a53cb3808cfdb4724959d94404f371a",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a26",
+      "name": "SM4-128-EAX",
+      "sha256": "db6116676d8bdbef1b6cac983a529bd49dcb84edd2543deb1ef22f30c43cee08",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a27",
+      "name": "Kuznyechik-256-EAX",
+      "sha256": "2361764375eb6fb910063781829671fbc2bd906acdeee617136dfd1250e72c21",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a28",
+      "name": "CAST6-256-EAX",
+      "sha256": "496cc2caa5158cc35fdfb941f141d877373db2702fc329e5ade404abaa3d0f58",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a29",
+      "name": "RC6-256-EAX",
+      "sha256": "d9d03f0f186904805666c6c9e2671309ab9972a57e07f38686a15541eda66242",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a30",
+      "name": "AES-128-CCM",
+      "sha256": "49f34808930c118bffd8001e4cdf156b9ed3129dd6a8fd9fa14878b9b37b9fb3",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a31",
+      "name": "AES-192-CCM",
+      "sha256": "7bba74498604a8b1b3e8516912283ca00b049a061a53c5759d3360b64388d1ee",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a32",
+      "name": "AES-256-CCM",
+      "sha256": "5aa311f83db637049424650a95df153766b11f6cacb259b364238386ce18f740",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a33",
+      "name": "CAMELLIA-128-CCM",
+      "sha256": "854a387a99939456193ee1b0f2ddc1afe7a030f62e3f925ceec813f70e5fcd9a",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a34",
+      "name": "CAMELLIA-192-CCM",
+      "sha256": "8efe6f7a6491b8584371e492b26327550ed2c73536f1a03c1dd95bad237a3ae0",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a35",
+      "name": "CAMELLIA-256-CCM",
+      "sha256": "a91f9659e443698ec7451628ba638bfa079f379a941e8bd508f3c02693206c1b",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a36",
+      "name": "ARIA-128-CCM",
+      "sha256": "a62cb1334d7f82446bb89d9ac44bfd45ae82658eff33609d020747e12e4f82a2",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a37",
+      "name": "ARIA-192-CCM",
+      "sha256": "271f5684d57409dec2751b053d16458c577d4187a8c4b04f33590b6e908d67f9",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a38",
+      "name": "ARIA-256-CCM",
+      "sha256": "ca0d48c5412cacd921d401c36e6b4202b36ad3a59899590d66daf17c4b6665b2",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a39",
+      "name": "Serpent-256-CCM",
+      "sha256": "aca8b81a12e0d10a63428616d85d3371b02aeaee5846598462010bcb53e08053",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a40",
+      "name": "Twofish-256-CCM",
+      "sha256": "6a7e764ad22d4a1ceb03f5ffec43f2c607952a6950a55079e2a0c4a155452757",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a41",
+      "name": "SM4-128-CCM",
+      "sha256": "b8a085d20c4dd6903c385f0a010fce127febfec220d10008c616125e4e24ca0b",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a42",
+      "name": "Kuznyechik-256-CCM",
+      "sha256": "80289ef33ae402bb7587b2f8d4b72755ff3f13715378fcdf8e19af85456773f5",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a43",
+      "name": "CAST6-256-CCM",
+      "sha256": "ca8bfe6806b599241f28dbc55b580167714f4e932899d3c936be8fa15814572b",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a44",
+      "name": "RC6-256-CCM",
+      "sha256": "f9af23b152b6a4bde3d23f600fe87d9a886748e3bd469a03555cb703438fdaac",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a45",
+      "name": "AES-128-CTR",
+      "sha256": "071bb6ad4f38773b03f455b31066775f2933ad072db3974a114b0f7be99e5661",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a46",
+      "name": "AES-192-CTR",
+      "sha256": "d59381ba16802a5c998b61da7afb8f8c57d3be7cf0f8852cb2e4a3fde090de70",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a47",
+      "name": "AES-256-CTR",
+      "sha256": "54bbce4b7a92e084c3dbef30a76942532c5a20a05f07fcb3b38a61f18b7e29e4",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a48",
+      "name": "CAMELLIA-128-CTR",
+      "sha256": "c087a021032f3479b59e8aacc86ed0a6f009af0578626dc822f6d0cbffa6da1d",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a49",
+      "name": "CAMELLIA-192-CTR",
+      "sha256": "20ab2a6736511154f8c664a39e345febb5494e4342c73b6d9bde1734680f16d5",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a50",
+      "name": "CAMELLIA-256-CTR",
+      "sha256": "aba0123c7c08557c4da3e154716d19e02d15d6743ff61d12655bea894e68ac3b",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a51",
+      "name": "ARIA-128-CTR",
+      "sha256": "e0a43b3d255b9621a9418378af72926f628cf50c3d28ae01e95231c47f279ae8",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a52",
+      "name": "ARIA-192-CTR",
+      "sha256": "9c880d734a6be56cc096b9965087f91d028adda0b5d98d4a762b59e621aa9a2d",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a53",
+      "name": "ARIA-256-CTR",
+      "sha256": "0943be1b154262ae902e2ae1f7aaa6a7eb484f762af51ed62da3e7907df0db1d",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a54",
+      "name": "Serpent-256-CTR",
+      "sha256": "ae0b23abb89c92a85fac9010a1c9c182ea1dc8896d9e4ecc4f2ffc3bae6067f3",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a55",
+      "name": "Twofish-256-CTR",
+      "sha256": "12ed4f379054e5217da44c3aca6b45a7412371fd5f30a45b2f90a4b4339cb1a5",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a56",
+      "name": "SM4-128-CTR",
+      "sha256": "572b15fbb050db114e05c89432a5d4cefb216f910e13b600bb37df364289320f",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a57",
+      "name": "Kuznyechik-256-CTR",
+      "sha256": "5f5a4cb16f82dd69bb8685ad0201f44d47f3dfcdd13e8f25ffac3e1780595231",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a58",
+      "name": "CAST6-256-CTR",
+      "sha256": "7130abba4c5ba6f95b8b19f863f51e33dae83c929dfb67871db86999ef5e9c72",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a59",
+      "name": "RC6-256-CTR",
+      "sha256": "728ed35038eace3b04b3347333f8f8c7a0ef98d9312141c7da9d58532a201e92",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a60",
+      "name": "AES-128-CBC",
+      "sha256": "a60b8ca87011a5a3df9c9fc82157ac9ab27461bedcf773ad63995333d7685def",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a61",
+      "name": "AES-192-CBC",
+      "sha256": "15c50151e73bd88941fafe2eb739082ec2d3e15adeae5c00620dd1c68cd370c0",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a62",
+      "name": "AES-256-CBC",
+      "sha256": "0ddf01e57a57a323bc673f3f97a4f3659ebb9a9e211553619be657c061c67e9d",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a63",
+      "name": "CAMELLIA-128-CBC",
+      "sha256": "288f796f7a0291b81b8d74ddee1769c2648f473b24934b561680845368c9c2c1",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a64",
+      "name": "CAMELLIA-192-CBC",
+      "sha256": "c4dad2e0974a82304d457d5ac04c719d743ca01b1d53b25a2a8525963047e062",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a65",
+      "name": "CAMELLIA-256-CBC",
+      "sha256": "95d159163d319f7897c1c77dd9a7dbca97a4e0e0d1c54c5de992f26b20de864a",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a66",
+      "name": "ARIA-128-CBC",
+      "sha256": "cd7568679644a651f3222a3567e1233e45a1c23359ce26f7b99d51993dc49c32",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a67",
+      "name": "ARIA-192-CBC",
+      "sha256": "9d8ec2b9925ee2f7fedf4f7899865506150858e95d7dd9eb9ad6e910db2e0148",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a68",
+      "name": "ARIA-256-CBC",
+      "sha256": "a0b93e50de4dbb29625ab318c9c3a52184c2baa7d3ac97943dcf0fed039ba064",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a69",
+      "name": "Serpent-256-CBC",
+      "sha256": "bd0b31602bddb11c4920bb85fae4e92212153a94631cb59c35b8271f583006de",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a70",
+      "name": "Twofish-256-CBC",
+      "sha256": "749377894fe7ac1a7d9889ca5af61afdcd2fa7e71aaf607319dc61dd18b0079e",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a71",
+      "name": "SM4-128-CBC",
+      "sha256": "533e1692d1db352075818c9adf43dd7714082e2da3d6c44e3d11faf7ae439dca",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a72",
+      "name": "Kuznyechik-256-CBC",
+      "sha256": "ecaf3d00ad4ffd6ee0c4f048c53c2e0c05bc9cdee0b4301f4a3b97c9f5fc0557",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a73",
+      "name": "CAST6-256-CBC",
+      "sha256": "601c8781c8adeac18a6a1d472ddf7920d34dbad383251661cb260fc763dce067",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a74",
+      "name": "RC6-256-CBC",
+      "sha256": "51610528308c050158c412d22bd37a4f5dcb956787c85f233101dfad0953fd3c",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a75",
+      "name": "ChaCha8-HMAC",
+      "sha256": "205b4394ca5992de998bd2ad05899a4054cc0522af1b3f599e940875cee99950",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a76",
+      "name": "ChaCha12-HMAC",
+      "sha256": "23d74d88f38540fba39ef6073934410f701c5e08afb6ff8a87bd55e6a8754afe",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a77",
+      "name": "ChaCha20-HMAC",
+      "sha256": "ef155f413864e20cec6d89f72665d7db25b1b94f602b2af72b0eb9bc732dfd85",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a78",
+      "name": "XChaCha8-HMAC",
+      "sha256": "38601da9f7db02b8883e207fd5baf67bdbb303462a3b50c2d37de5040534961e",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a79",
+      "name": "XChaCha12-HMAC",
+      "sha256": "2f1bf8fc62c2de2c4b026cb7a94c81890564a2cd1fe3b7749a30bd12687a4365",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a80",
+      "name": "XChaCha20-HMAC",
+      "sha256": "bb40e52aedceac249eb0a727cb37601bda9e19add390637ca1cd12a2f06691a2",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a81",
+      "name": "Salsa8-HMAC",
+      "sha256": "a036761a5f92e54b2345d7d8100b925ed68fcb264f292c1bfab5a01263a9087d",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a82",
+      "name": "Salsa12-HMAC",
+      "sha256": "abab0facc9b7ecb5ab439b21fc8cbde192f6d46a879dfe5c305d38db231d2bfa",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a83",
+      "name": "Salsa20-HMAC",
+      "sha256": "cd1565939963dc7b384b38f05b02c87e5a37ac49c6f4416105683d1f0bc2c2df",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a84",
+      "name": "XSalsa8-HMAC",
+      "sha256": "3db20a4909bdeef7bc6d3ea574d42f8d12dc4df118deb2d6c1fb5a7851becf87",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a85",
+      "name": "XSalsa12-HMAC",
+      "sha256": "e67009bbcfb1b78f141d824efa1eeb50611db0f9a3588a2a229185c4d16b8312",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a86",
+      "name": "XSalsa20-HMAC",
+      "sha256": "9510ed87e26b0f525aef4396cdcd7d4d2e174f3ea815cb1a3e7adc2b6ac73026",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a87",
+      "name": "Threefish-256-CTR",
+      "sha256": "5bd09841ae8485ee616d65f504e78184b93557319a49c4628c33662ee600c540",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a88",
+      "name": "Threefish-512-CTR",
+      "sha256": "ac3e867d844283f00a6e8dbd0d9e17dbcba4abcbee6c2ff243e67abe93458b5e",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a89",
+      "name": "Threefish-1024-CTR",
+      "sha256": "876efae6c9c25edcb8670acb80ba5124333d4fb23479f206c7c3d2bc8e3634d7",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a90",
+      "name": "RC4-128-HMAC",
+      "sha256": "c8e31c3fc4cf8d716d79a1f1773340236812517bfb830b6614157b5275e8f7a8",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a91",
+      "name": "RC4-256-HMAC",
+      "sha256": "adc002f905f62fedc3e02895d28faf6bd9dfbdf9c2bdbe4027f635981ffa83f1",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a92",
+      "name": "Toy repeating-xor",
+      "sha256": "891544da0b7d98e85770db81e52471a954870327469a7730ec3c7e3aad37c232",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a93",
+      "name": "Toy repeating-add",
+      "sha256": "3a18484e318ac6e0292284b1d1038e374e5831560bd0e6dbaf9474b3e0f1e774",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a94",
+      "name": "Toy beaufort-byte",
+      "sha256": "560de1fff3e746d5678f345277051316fa600b56eaef8bb043b03632190c49d7",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a95",
+      "name": "Toy affine-byte",
+      "sha256": "fda13c9498b4106d028d2a0809d4221274e15f77a73d4f58e0fcc2108ee6d5f1",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a96",
+      "name": "Toy rotate-byte",
+      "sha256": "1de7e807dbaeab015ffbf735b3c1adb1164254466de72bae7380451b1bb259d7",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a97",
+      "name": "Toy xor-rotate",
+      "sha256": "1c077847edb3ac1b194a06617960763885131f43f1ae2e523e68fb428be8056e",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a98",
+      "name": "Toy substitution",
+      "sha256": "11182357a01cd1e459ad6af95cfb18f74ef70ec3e8223d0bfe75615c6a244175",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a99",
+      "name": "Toy xorshift64",
+      "sha256": "ac5d5fb8b186e18bf50a4f3eae60573fa0c94ff392c820eb493160486706ffd6",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    },
+    {
+      "app": "a100",
+      "name": "Toy lcg64",
+      "sha256": "f0f9dbe08395f6e9f1ecdb8a3d31e17c458ace7bc4228188f7a4045a589c34ec",
+      "checks": [
+        "key generation",
+        "encrypt",
+        "decrypt",
+        "tamper rejection without output"
+      ]
+    }
+  ]
+}

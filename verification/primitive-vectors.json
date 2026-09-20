@@ -1,0 +1,110 @@
+{
+  "AES-128": {
+    "key": "80000000000000000000000000000000",
+    "plain": "00000000000000000000000000000000",
+    "cipher": "0edd33d3c621e546455bd8ba1418bec8",
+    "source": "RustCrypto aes 0.9.2 published aes128.blb first vector; https://github.com/RustCrypto/block-ciphers/tree/master/aes/tests"
+  },
+  "AES-192": {
+    "key": "800000000000000000000000000000000000000000000000",
+    "plain": "00000000000000000000000000000000",
+    "cipher": "de885dc87f5a92594082d02cc1e1b42c",
+    "source": "RustCrypto aes 0.9.2 published aes192.blb first vector; https://github.com/RustCrypto/block-ciphers/tree/master/aes/tests"
+  },
+  "AES-256": {
+    "key": "8000000000000000000000000000000000000000000000000000000000000000",
+    "plain": "00000000000000000000000000000000",
+    "cipher": "e35a6dcb19b201a01ebcfa8aa22b5759",
+    "source": "RustCrypto aes 0.9.2 published aes256.blb first vector; https://github.com/RustCrypto/block-ciphers/tree/master/aes/tests"
+  },
+  "CAMELLIA-128": {
+    "key": "80000000000000000000000000000000",
+    "plain": "00000000000000000000000000000000",
+    "cipher": "6c227f749319a3aa7da235a9bba05a2c",
+    "source": "RustCrypto camellia 0.2.1 published camellia128.blb first vector; https://github.com/RustCrypto/block-ciphers/tree/master/camellia/tests"
+  },
+  "CAMELLIA-192": {
+    "key": "800000000000000000000000000000000000000000000000",
+    "plain": "00000000000000000000000000000000",
+    "cipher": "1b6220d365c2176c1d41a5826520fca1",
+    "source": "RustCrypto camellia 0.2.1 published camellia192.blb first vector; https://github.com/RustCrypto/block-ciphers/tree/master/camellia/tests"
+  },
+  "CAMELLIA-256": {
+    "key": "8000000000000000000000000000000000000000000000000000000000000000",
+    "plain": "00000000000000000000000000000000",
+    "cipher": "2136fabda091dfb5171b94b8efbb5d08",
+    "source": "RustCrypto camellia 0.2.1 published camellia256.blb first vector; https://github.com/RustCrypto/block-ciphers/tree/master/camellia/tests"
+  },
+  "Serpent-256": {
+    "key": "8000000000000000000000000000000000000000000000000000000000000000",
+    "plain": "00000000000000000000000000000000",
+    "cipher": "a223aa1288463c0e2be38ebd825616c0",
+    "source": "RustCrypto serpent 0.6.0 published serpent256.blb first vector; https://github.com/RustCrypto/block-ciphers/tree/master/serpent/tests"
+  },
+  "ARIA-128": {
+    "key": "000102030405060708090a0b0c0d0e0f",
+    "plain": "00112233445566778899aabbccddeeff",
+    "cipher": "d718fbd6ab644c739da95f3be6451778",
+    "source": "https://www.rfc-editor.org/rfc/rfc5794.html#appendix-A"
+  },
+  "ARIA-192": {
+    "key": "000102030405060708090a0b0c0d0e0f1011121314151617",
+    "plain": "00112233445566778899aabbccddeeff",
+    "cipher": "26449c1805dbe7aa25a468ce263a9e79",
+    "source": "https://www.rfc-editor.org/rfc/rfc5794.html#appendix-A"
+  },
+  "ARIA-256": {
+    "key": "000102030405060708090a0b0c0d0e0f101112131415161718191a1b1c1d1e1f",
+    "plain": "00112233445566778899aabbccddeeff",
+    "cipher": "f92bd7c79fb72e2f2b8f80c1972d24fc",
+    "source": "https://www.rfc-editor.org/rfc/rfc5794.html#appendix-A"
+  },
+  "Twofish-256": {
+    "key": "0000000000000000000000000000000000000000000000000000000000000000",
+    "plain": "00000000000000000000000000000000",
+    "cipher": "57ff739d4dc92c1bd7fc01700cc8216f",
+    "source": "https://github.com/RustCrypto/block-ciphers/blob/master/twofish/tests/mod.rs (published Twofish 256-bit iterative vector, iteration 1)"
+  },
+  "SM4-128": {
+    "key": "0123456789abcdeffedcba9876543210",
+    "plain": "0123456789abcdeffedcba9876543210",
+    "cipher": "681edf34d206965e86b3e94f536e4246",
+    "source": "GM/T 0002-2012 example 1; https://github.com/RustCrypto/block-ciphers/blob/master/sm4/tests/mod.rs"
+  },
+  "Kuznyechik-256": {
+    "key": "8899aabbccddeeff0011223344556677fedcba98765432100123456789abcdef",
+    "plain": "1122334455667700ffeeddccbbaa9988",
+    "cipher": "7f679d90bebc24305a468d42b9d4edcd",
+    "source": "https://www.rfc-editor.org/rfc/rfc7801.html#section-5.5"
+  },
+  "CAST6-256": {
+    "key": "2342bb9efa38542cbed0ac83940ac2988d7c47ce264908461cc1b5137ae6b604",
+    "plain": "00000000000000000000000000000000",
+    "cipher": "4f6a2038286897b9c9870136553317fa",
+    "source": "https://www.rfc-editor.org/rfc/rfc2612.html#appendix-A"
+  },
+  "RC6-256": {
+    "key": "0000000000000000000000000000000000000000000000000000000000000000",
+    "plain": "00000000000000000000000000000000",
+    "cipher": "8f5fbd0510d15fa893fa3fda6e857ec2",
+    "source": "https://github.com/weidai11/cryptopp/blob/master/TestData/rc6val.dat"
+  },
+  "Threefish-256": {
+    "key": "0000000000000000000000000000000000000000000000000000000000000000",
+    "plain": "0000000000000000000000000000000000000000000000000000000000000000",
+    "cipher": "84da2a1f8beaee947066ae3e3103f1ad536db1f4a1192495116b9f3ce6133fd8",
+    "source": "https://github.com/weidai11/cryptopp/blob/master/TestVectors/threefish.txt (zero key, plaintext and tweak)"
+  },
+  "Threefish-512": {
+    "key": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "plain": "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "cipher": "b1a2bbc6ef6025bc40eb3822161f36e375d1bb0aee3186fbd19e47c5d479947b7bc2f8586e35f0cff7e7f03084b0b7b1f1ab3961a580a3e97eb41ea14a6d7bbe",
+    "source": "https://github.com/weidai11/cryptopp/blob/master/TestVectors/threefish.txt (zero key, plaintext and tweak)"
+  },
+  "Threefish-1024": {
+    "key": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "plain": "0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "cipher": "f05c3d0a3d05b304f785ddc7d1e036015c8aa76e2f217b06c6e1544c0bc1a90df0accb9473c24e0fd54fea68057f43329cb454761d6df5cf7b2e9b3614fbd5a20b2e4760b40603540d82eabc5482c171c832afbe68406bc39500367a592943fa9a5b4a43286ca3c4cf46104b443143d560a4b230488311df4feef7e1dfe8391e",
+    "source": "https://github.com/weidai11/cryptopp/blob/master/TestVectors/threefish.txt (zero key, plaintext and tweak)"
+  }
+}
