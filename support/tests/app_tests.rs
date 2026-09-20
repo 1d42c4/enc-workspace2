@@ -91,6 +91,11 @@ fn backend_rejects_wrong_key_size() {
     assert!(App::decrypt(&[], &[0; App::NONCE_LEN], b"aad", b"data").is_err());
 }
 
+// Unix fork can briefly inherit another test's writable executable descriptor,
+// even with CLOEXEC, until exec closes it. Coordinate copies with process starts.
+// https://github.com/rust-lang/rust/issues/114554
+static PROCESS_GATE: std::sync::Mutex<()> = std::sync::Mutex::new(());
+
 struct Fixture {
     dir: tempfile::TempDir,
     cwd: tempfile::TempDir,
@@ -98,6 +103,7 @@ struct Fixture {
 }
 impl Fixture {
     fn new() -> Self {
+        let _guard = PROCESS_GATE.lock().unwrap();
         let dir = tempfile::tempdir().unwrap();
         let cwd = tempfile::tempdir().unwrap();
         let exe = dir.path().join(Path::new(EXE).file_name().unwrap());
@@ -107,11 +113,18 @@ impl Fixture {
         Self { dir, cwd, exe }
     }
     fn run(&self, args: &[&str]) -> Output {
-        Command::new(&self.exe)
-            .args(args)
-            .current_dir(self.cwd.path())
-            .output()
-            .unwrap()
+        let child = {
+            let _guard = PROCESS_GATE.lock().unwrap();
+            Command::new(&self.exe)
+                .args(args)
+                .current_dir(self.cwd.path())
+                .stdin(std::process::Stdio::null())
+                .stdout(std::process::Stdio::piped())
+                .stderr(std::process::Stdio::piped())
+                .spawn()
+                .unwrap()
+        };
+        child.wait_with_output().unwrap()
     }
     fn ok(&self, args: &[&str]) {
         let o = self.run(args);
